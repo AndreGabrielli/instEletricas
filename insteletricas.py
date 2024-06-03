@@ -28,7 +28,7 @@ def atbarras(n, e, l, d, pa):
 
   r = {}
   #converte o dicionário em uma lista
-  calculo = []
+  calculo = [] #talvez seja possível fazer algumas dessas operações com dicionários mesmo. Assim não ia haver necessidade de ficar convertendo
   t = 1
   while t <= n:
     calculo.append(ri[t])
@@ -36,7 +36,7 @@ def atbarras(n, e, l, d, pa):
 
   #gera e executa as fórmulas da soma
   t = 0
-  i = 1 #eu vou precisar que o index do dict em um ritmo diferente do t
+  i = 1 #eu vou precisar que o index do dict aumente em um ritmo diferente do t
   m = n
   while t < n:
     if t != 0: #esse if não deve rodar na primeira vez
@@ -80,5 +80,3 @@ def atbarras(n, e, l, d, pa):
   #conta final
   gg = 1 / sum(fl)
   return gg
-
-atbarras(3, 0.1, 0.1, 10, 40)
